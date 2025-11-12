@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact-titre': '[ CONTACT ]',
             'contact-p': 'Prêt à rejoindre votre équipe. Contactez-moi :',
             'contact-loc': 'Annecy, France',
-            'footer-p': 'Portfolio fait avec &#10084; par Timothée Kiehl.'
+            'footer-p': 'Fait avec ❤️ par Timothée Kiehl.'
         },
         'en': {
             'lang-btn': 'FR',
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact-titre': '[ CONTACT ]',
             'contact-p': 'Ready to join your team. Contact me:',
             'contact-loc': 'Annecy, France',
-            'footer-p': "Portfolio made with &#10084; by Timothée Kiehl."
+            'footer-p': "Made with ❤️ by Timothée Kiehl."
         }
     };
 
@@ -247,5 +247,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- 4. APPEL INITIAL ---
     // Initialise Typed.js en français au chargement
     initTyped(currentLang);
+
+    const footerP = document.querySelector('[data-lang="footer-p"]');
+    if (footerP) {
+        footerP.innerHTML = translations[currentLang]['footer-p'];
+    }
 
 });

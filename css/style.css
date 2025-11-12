@@ -406,16 +406,11 @@ ul {
 
 /* --- Pied de page --- */
 footer {
-    display: flex;
     text-align: center;
     padding: 20px;
     margin-top: 30px;
     font-size: 0.9em;
     color: #888;
-}
-
-footer p{
-    justify-items: center;
 }
 
 /* ===============================================
@@ -476,4 +471,42 @@ footer p{
 }
 .contact-list li:hover i {
     color: var(--sw-yellow);
+}
+
+/* ===============================================
+   STYLES POUR PAGE DE JEU (NOUVEAU)
+=============================================== */
+
+.game-page-container {
+    text-align: center;
+}
+
+/* Cible le canvas de Phaser */
+#game-container canvas {
+    border: 2px solid var(--sw-blue-neon);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+    margin: 0 auto; /* Centre le canvas */
+}
+
+/* Bouton Retour */
+.btn-back {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 20px;
+    border: 2px solid var(--sw-yellow);
+    border-radius: 5px;
+    color: var(--sw-yellow);
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.btn-back:hover {
+    background-color: var(--sw-yellow);
+    color: var(--bg-dark);
+    box-shadow: 0 0 15px var(--sw-yellow);
+}
+.btn-back i {
+    margin-right: 8px;
 }
