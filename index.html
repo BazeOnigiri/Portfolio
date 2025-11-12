@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Timothée Kiehl</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo:wght@300;400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <div class="container">
+        <header>
+            <nav>
+                <a href="#profil" data-lang="nav-profil">Profil</a>
+                <a href="#competences" data-lang="nav-competences">Compétences</a>
+                <a href="#projets" data-lang="nav-projets">Projets</a>
+                <a href="#education" data-lang="nav-education">Éducation</a>
+                <a href="#contact" data-lang="nav-contact">Contact</a>
+                
+                <button id="lang-toggle-btn" data-lang="lang-btn">EN</button>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="hero">
+                <h1>Timothée Kiehl</h1>
+                <h2><span id="typed-text"></span></h2>
+            </section>
+
+            <hr class="section-divider">
+
+            <section id="profil" class="content-section">
+                <h2 data-lang="profil-titre">[ PROFIL ]</h2>
+                
+                <div class="profil-container">
+                    <div class="profile-pic-container">
+                        <img src="https://via.placeholder.com/200" alt="Photo de Timothée Kiehl" class="profile-pic">
+                    </div>
+                    <div class="profil-text">
+                        <p data-lang="profil-p">
+                            Étudiant motivé en deuxième année de BUT Informatique. Actuellement à la recherche d'un stage pour compléter ma deuxième année, 
+                            spécifiquement en développement .NET8 C# ou développement web. Je reste ouvert à l'apprentissage de nouveaux langages 
+                            et technologies.
+                        </p>
+                        <a href="assets/CV International.pdf" download="CV_Timothee_Kiehl.pdf" class="btn-download" data-lang="profil-btn-cv">
+                            <i class="fa-solid fa-download"></i> Télécharger mon CV
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <section id="competences" class="content-section">
+                <h2 data-lang="competences-titre">[ COMPÉTENCES TECHNIQUES ]</h2>
+                
+                <div class="tech-container">
+                    <div class="tech-scroller">
+                        <div class="tech-list">
+                            <div class="tech-card"><i class="devicon-csharp-plain"></i><span>C# / .NET</span></div>
+                            <div class="tech-card"><i class="devicon-python-plain"></i><span>Python</span></div>
+                            <div class="tech-card"><i class="devicon-html5-plain"></i><span>HTML5</span></div>
+                            <div class="tech-card"><i class="devicon-css3-plain"></i><span>CSS3</span></div>
+                            <div class="tech-card"><i class="devicon-javascript-plain"></i><span>JavaScript</span></div>
+                            <div class="tech-card"><i class="devicon-php-plain"></i><span>PHP</span></div>
+                            <div class="tech-card"><i class="devicon-laravel-plain"></i><span>Laravel</span></div>
+                            <div class="tech-card"><i class="devicon-postgresql-plain"></i><span>SQL (Postgre)</span></div>
+                            <div class="tech-card"><i class="devicon-debian-plain"></i><span>Debian (Linux)</span></div>
+                            <div class="tech-card"><i class="devicon-git-plain"></i><span>Git</span></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <hr class="section-divider">
+
+            <section id="projets" class="content-section">
+                <h2 data-lang="projets-titre">[ PROJETS ]</h2>
+                <div class="project-grid">
+                    
+                    <div class="project-tile">
+                        <img src="https://via.placeholder.com/400x250/0a192f/00d4ff?text=Projet+Web" alt="Aperçu du projet web" class="project-image">
+                        <div class="project-content">
+                            <h3 data-lang="projet1-titre">Projet Web (Laravel)</h3>
+                            <p data-lang="projet1-p">Collaboration en équipe pour construire un site web basé sur Laravel. Tâches incluant diagrammes MERISE et BPMN, cryptographie, conformité légale et graphiques POWER BI.</p>
+                            <div class="project-tech">
+                                <span>Laravel</span> <span>PHP</span> <span>Power BI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/August7337/leboncoin" target="_blank" rel="noopener noreferrer" class="project-link" data-lang="projet-lien-code"><i class="fa-brands fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-tile">
+                        <img src="https://via.placeholder.com/400x250/0a192f/00d4ff?text=Projet+C%23" alt="Aperçu du projet C#" class="project-image">
+                        <div class="project-content">
+                            <h3 data-lang="projet2-titre">Projet C#.NET8 WPF</h3>
+                            <p data-lang="projet2-p">Conception d'une application de gestion de commandes de vin. Conception UML (cas d'utilisation, diagramme de classe) et collaboration via GitHub.</p>
+                            <div class="project-tech">
+                                <span>C#</span> <span>.NET8</span> <span>WPF</span> <span>UML</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/BazeOnigiri/SaeNicolas" target="_blank" rel="noopener noreferrer" class="project-link" data-lang="projet-lien-code"><i class="fa-brands fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-tile">
+                        <img src="assets/previewPortfolio.png" alt="Aperçu du portfolio" class="project-image">
+                        <div class="project-content">
+                            <h3 data-lang="projet3-titre">Ce Portfolio</h3>
+                            <p data-lang="projet3-p">Site web portfolio personnel construit de zéro pour présenter mes compétences et projets, avec un design inspiré de Star Wars.</p>
+                            <div class="project-tech">
+                                <span>HTML</span> <span>CSS</span> <span>JS</span> <span>Particles.js</span> <span>Typed.js</span> <span>Lenis</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/BazeOnigiri" target="_blank" rel="noopener noreferrer" class="project-link" data-lang="projet-lien-code"><i class="fa-brands fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-tile">
+                        <img src="assets/previewCailloux.png" alt="Aperçu du jeu Cailloux" class="project-image">
+                        <div class="project-content">
+                            <h3 data-lang="projet4-titre">Jeu 'Cailloux'</h3>
+                            <p data-lang="projet4-p">Implémentation d'un jeu 2D simple utilisant le framework Phaser.js, dans le cadre d'une évaluation.</p>
+                            <div class="project-tech">
+                                <span>HTML</span> <span>CSS</span> <span>JavaScript</span> <span>Phaser.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/BazeOnigiri" target="_blank" rel="noopener noreferrer" class="project-link" data-lang="projet-lien-code"><i class="fa-brands fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <section id="education" class="content-section">
+                <h2 data-lang="education-titre">[ ÉDUCATION ]</h2>
+                <ul class="education-list">
+                    <li>
+                        <span class="education-date" data-lang="education1-date">2024 - 2027</span>
+                        <h3 data-lang="education1-titre">BUT Informatique</h3>
+                        <p data-lang="education1-loc">University of Savoy/IUT Annecy - Annecy-le-Vieux, France</p>
+                    </li>
+                    <li>
+                        <span class="education-date" data-lang="education2-date">2022 - 2024</span>
+                        <h3 data-lang="education2-titre">Baccalauréat Général (Spé. NSI & Maths)</h3>
+                        <p data-lang="education2-loc">Lycée Anna de Noailles - Evian-les-Bains, France</p>
+                    </li>
+                </ul>
+            </section>
+
+            <hr class="section-divider">
+
+            <section id="langues" class="content-section">
+                <h2 data-lang="langues-titre">[ LANGUES ]</h2>
+                <ul class="langues-list">
+                    <li>
+                        <strong data-lang="langue1-nom">Français:</strong>
+                        <span data-lang="langue1-lvl">(Natif)</span>
+                    </li>
+                    <li>
+                        <strong data-lang="langue2-nom">Anglais:</strong>
+                        <span data-lang="langue2-lvl">(B2 - Intermédiaire avancé)</span>
+                    </li>
+                    <li>
+                        <strong data-lang="langue3-nom">Allemand:</strong>
+                        <span data-lang="langue3-lvl">(A2 - Débutant)</span>
+                    </li>
+                </ul>
+            </section>
+
+            <hr class="section-divider">
+            
+            <section id="interets" class="content-section">
+                <h2 data-lang="interets-titre">[ CENTRES D'INTÉRÊT ]</h2>
+                <ul class="interets-list">
+                    <li data-lang="interet1"><i class="fa-solid fa-music"></i> Musique (Nujabes, 2Pac, Dire Straits...)</li>
+                    <li data-lang="interet2"><i class="fa-solid fa-book-open"></i> Culture Geek (Manhwa, Manhua, Star Wars)</li>
+                    <li data-lang="interet3"><i class="fa-solid fa-volleyball"></i> Sport (Volleyball, Snowboard)</li>
+                </ul>
+            </section>
+
+            <hr class="section-divider">
+
+            <section id="contact" class="content-section">
+                <h2 data-lang="contact-titre">[ CONTACT ]</h2>
+                <p data-lang="contact-p">Prêt à rejoindre votre équipe. Contactez-moi :</p>
+                
+                <ul class="contact-list">
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:timothee.j.kiehl@gmail.com">timothee.j.kiehl@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/timoth%C3%A9e-kiehl-0a0742273/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-github"></i>
+                        <a href="https://github.com/BazeOnigiri" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-map-marker-alt"></i>
+                        <span data-lang="contact-loc">Annecy, France</span>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p data-lang="footer-p">Portfolio de Timothée Kiehl.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
