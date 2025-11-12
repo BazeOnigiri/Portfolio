@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact-titre': '[ CONTACT ]',
             'contact-p': 'Prêt à rejoindre votre équipe. Contactez-moi :',
             'contact-loc': 'Annecy, France',
-            'footer-p': 'Portfolio de Timothée Kiehl.'
+            'footer-p': 'Portfolio fait avec &#10084; par Timothée Kiehl.'
         },
         'en': {
             'lang-btn': 'FR',
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact-titre': '[ CONTACT ]',
             'contact-p': 'Ready to join your team. Contact me:',
             'contact-loc': 'Annecy, France',
-            'footer-p': "Timothée Kiehl's Portfolio."
+            'footer-p': "Portfolio made with &#10084; by Timothée Kiehl."
         }
     };
 

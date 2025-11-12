@@ -406,11 +406,16 @@ ul {
 
 /* --- Pied de page --- */
 footer {
+    display: flex;
     text-align: center;
     padding: 20px;
     margin-top: 30px;
     font-size: 0.9em;
     color: #888;
+}
+
+footer p{
+    justify-items: center;
 }
 
 /* ===============================================
