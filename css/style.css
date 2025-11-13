@@ -1,10 +1,9 @@
-/* Import des polices */
 :root {
-    --sw-yellow: #FFE81F; /* Jaune Star Wars */
-    --sw-blue-neon: #00d4ff; /* Bleu néon sabre laser */
-    --bg-dark: #030a14; /* Fond espace profond */
+    --sw-yellow: #FFE81F; 
+    --sw-blue-neon: #00d4ff; 
+    --bg-dark: #030a14;
     --text-light: #ececec;
-    --card-bg: rgba(10, 25, 47, 0.85); /* Fond de carte semi-transparent */
+    --card-bg: rgba(10, 25, 47, 0.85); 
 }
 
 html {
@@ -51,7 +50,7 @@ nav a {
     font-family: 'Orbitron', sans-serif;
     color: var(--sw-blue-neon);
     text-decoration: none;
-    margin: 0 10px; /* Espace réduit pour plus d'items */
+    margin: 0 10px; 
     font-size: 1.1em;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
@@ -198,10 +197,11 @@ ul {
     overflow-y: hidden;
     padding: 10px 0 20px 0;
     -ms-overflow-style: none;
-    scrollbar-width: none;
+    scrollbar-width: 30px;
+    scrollbar-color: var(--sw-blue-neon) transparent;
 }
 .tech-scroller::-webkit-scrollbar {
-    display: none; 
+    display: contents; 
 }
 .tech-list {
     display: flex;
@@ -395,6 +395,21 @@ ul {
     width: 20px; 
 }
 
+.spotify-row {
+    display: flex;           /* Active l'alignement horizontal */
+    gap: 15px;               /* Espace entre les lecteurs */
+    width: 100%;             /* Prend toute la largeur du parent */
+    margin-top: 15px;        /* Espace au-dessus */
+    margin-bottom: 15px;
+    flex-wrap: wrap;         /* Permet le retour à la ligne sur mobile si nécessaire */
+}
+
+/* Chaque iframe prend une part égale de l'espace */
+.spotify-row iframe {
+    flex: 1;                 
+    min-width: 250px;        /* Sécurité : empile les lecteurs si l'écran est trop petit (mobile) */
+}
+
 
 /* --- Séparateur de section --- */
 .section-divider {
@@ -414,7 +429,7 @@ footer {
 }
 
 /* ===============================================
-   STYLES POUR LA LISTE DE CONTACT
+    STYLES POUR LA LISTE DE CONTACT
 =============================================== 
 */
 
@@ -455,7 +470,7 @@ footer {
 }
 
 /* ===============================================
-   EFFET DE HOVER (CONTACT)
+    EFFET DE HOVER (CONTACT)
 =============================================== 
 */
 
@@ -474,39 +489,64 @@ footer {
 }
 
 /* ===============================================
-   STYLES POUR PAGE DE JEU (NOUVEAU)
+    STYLES SPÉCIFIQUES PAGE JEU
 =============================================== */
 
-.game-page-container {
-    text-align: center;
+/* Ajustements pour le conteneur iframe */
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
 }
 
-/* Cible le canvas de Phaser */
-#game-container canvas {
-    border: 2px solid var(--sw-blue-neon);
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
-    margin: 0 auto; /* Centre le canvas */
+.iframe-container iframe {
+    max-width: 100%;
+    /* On enlève la bordure ici car elle est maintenant autour de toute la section */
+    border: none; 
+    border-radius: 4px;
 }
 
-/* Bouton Retour */
+/* Styles spécifiques pour les textes dans la page jeu */
+.game-page-container h1 {
+    color: var(--sw-yellow);
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 15px var(--sw-yellow);
+    margin-bottom: 5px;
+}
+
+.game-page-container .subtitle {
+    color: var(--sw-blue-neon);
+    font-family: 'Exo', sans-serif;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+/* Style du bouton Retour (Réintégration explicite) */
 .btn-back {
     display: inline-block;
-    margin-top: 25px;
-    padding: 10px 20px;
+    margin-top: 15px;
+    padding: 10px 25px;
     border: 2px solid var(--sw-yellow);
     border-radius: 5px;
+    background-color: transparent;
     color: var(--sw-yellow);
     text-decoration: none;
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
+    text-transform: uppercase;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
+
 .btn-back:hover {
     background-color: var(--sw-yellow);
     color: var(--bg-dark);
     box-shadow: 0 0 15px var(--sw-yellow);
+    transform: translateY(-2px);
 }
+
 .btn-back i {
     margin-right: 8px;
 }
