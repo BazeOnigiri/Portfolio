@@ -131,7 +131,8 @@ nav a:hover {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    border: 3px solid var(--sw-blue-neon);
+    border: 15px solid darkblue;
+    padding: 7px;
     object-fit: cover;
 }
 .profil-text {
