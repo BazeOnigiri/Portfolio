@@ -129,17 +129,17 @@ nav a:hover {
     position: relative; 
     width: 210px;
     height: 210px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .profile-pic {
     width: 180px;
     height: 180px;
     border-radius: 50%;
     object-fit: cover;
-    z-index: 1;
-    position: relative;
+    z-index: 1;         
+    position: absolute;
+    top: 50%;           
+    left: 50%;
+    transform: translate(-50%, -50%); 
 }
 
 .profile-pic-background {
