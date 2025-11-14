@@ -126,6 +126,12 @@ nav a:hover {
 }
 .profile-pic-container {
     flex-shrink: 0;
+    position: relative; 
+    width: 210px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .profile-pic {
     width: 180px;
@@ -133,10 +139,13 @@ nav a:hover {
     border-radius: 50%;
     object-fit: cover;
     z-index: 1;
+    position: relative;
 }
 
 .profile-pic-background {
     position: absolute;
+    top: 0; 
+    left: 0; 
     width: 210px;
     height: 210px;
     border-radius: 50%;
