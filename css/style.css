@@ -124,33 +124,41 @@ nav a:hover {
     align-items: flex-start;
     gap: 25px;
 }
+
 .profile-pic-container {
     flex-shrink: 0;
     position: relative; 
-    width: 210px;
+    width: 210px;      
     height: 210px;
 }
+
 .profile-pic {
     width: 180px;
     height: 180px;
     border-radius: 50%;
+    /* margin: 5px; */
     object-fit: cover;
     z-index: 1;         
-    position: absolute;
+    position: absolute; 
     top: 50%;           
-    left: 50%;
+    left: 50%;          
     transform: translate(-50%, -50%); 
 }
 
 .profile-pic-background {
     position: absolute;
-    top: 0; 
-    left: 0; 
+    top: 0;
+    left: 0;
     width: 210px;
     height: 210px;
     border-radius: 50%;
-    z-index: 0;
+    z-index: 0;         
     animation: rotateBackground 20s linear infinite;
+}
+
+.profil-text {
+    flex-grow: 1;
+    flex-basis: 300px;
 }
 
 @keyframes rotateBackground {
@@ -158,10 +166,6 @@ nav a:hover {
     to { transform: rotate(360deg); }
 }
 
-.profil-text {
-    flex-grow: 1;
-    flex-basis: 300px;
-}
 
 
 /* --- Bouton de Téléchargement CV --- */
