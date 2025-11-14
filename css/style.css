@@ -235,10 +235,12 @@ ul {
     color: var(--text-light);
     margin-top: 8px;
 }
-.tech-card div{
+.tech-card .progression-bar-container{
     border: 1px solid var(--sw-blue-neon);
     width: 70%;
     height: 5%;
+    border-radius: 99px;
+    background-color: var(--sw-blue-neon);
 }
 .tech-card:hover {
     border-color: var(--sw-yellow);
@@ -249,10 +251,11 @@ ul {
 .tech-card:hover span{
     color: var(--sw-yellow);
 }
-.tech-card:hover div{
+.tech-card:hover .progression-bar-container{
     border-color: var(--sw-yellow);
+    background-color: var(--sw-yellow);
 }
-.tech-card div:nth-child(1){
+.tech-card .progression-bar-container:nth-child(1){
     background: var(--sw-yellow);
 }
 
