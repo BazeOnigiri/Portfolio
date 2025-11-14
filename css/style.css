@@ -131,9 +131,16 @@ nav a:hover {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    border: 15px solid darkblue;
-    padding: 7px;
     object-fit: cover;
+}
+
+.profile-pic-background {
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    z-index: -1;
+    animation: rotateBackground 20s linear infinite;
 }
 .profil-text {
     flex-grow: 1;
