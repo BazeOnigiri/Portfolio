@@ -1,4 +1,4 @@
-Personal Web Portfolio
+# Personal Web Portfolio
 This repository showcases my core projects, 
 technical skills, and professional achievements.
 
