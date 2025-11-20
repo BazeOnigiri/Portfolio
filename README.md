@@ -10,4 +10,5 @@ Serving as both a professional showcase and a
 tool for academic or technical evaluation.
 
 Feel free to explore the different sections 
-to learn more about my journey and key projects.
+to learn more about my journey and key projects [here](
+https://bazeonigiri.github.io/Portfolio/).
